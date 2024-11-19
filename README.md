@@ -1,7 +1,6 @@
-#EWar!
+# EWar (current dev thoughts)!
 
-Current dev thoughts:
-##Frontend
+## Frontend
 Where to get card designs?
 Card goes onto the pile animation? Should it just appear there?
 How does the pile look structured? Should users be able to look a few cards down from the card on top?
@@ -14,12 +13,12 @@ Keyboard input
 Spacebar to place a card down
 Different key to slap
 
-##Backend
+## Backend
 Make a user account with password
 Preferred combos to play in game
 How many players to play with (other players are just computers playing a card down they won't actually slap)
 
-##Valid combination options
+## Valid combination options
 Doubles
 Sandwiches
 Marriage
