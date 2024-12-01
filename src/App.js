@@ -1,26 +1,30 @@
 import logo from './logo.svg';
+import settingImg from './cardimgs/setting.png';
+import loginImg from './cardimgs/user.png';
+import tableImg from './cardimgs/table.jpg';
+
 
 import './App.css';
 
 let isGameStarted = false; //game has not begun. global variable
-A
-document.addEventListener('keydown', (event) => {
-  if (isGameStarted) {
-    if (event.code === 'Space') {
-      // Handle spacebar press
-      console.log('Spacebar pressed during gameplay');
-    } else if (event.code === 'KeyQ') {
-      // Handle 'Q' key press
-      console.log('Q pressed to quit');
-      isGameStarted = false; // End the game
-    }
-  }
-});
 
-// Start the game when the "Start" button is clicked
-document.getElementById('startButton').addEventListener('click', () => {
-  isGameStarted = true;
-});
+// document.addEventListener('keydown', (event) => {
+//   if (isGameStarted) {
+//     if (event.code === 'Space') {
+//       // Handle spacebar press
+//       console.log('Spacebar pressed during gameplay');
+//     } else if (event.code === 'KeyQ') {
+//       // Handle 'Q' key press
+//       console.log('Q pressed to quit');
+//       isGameStarted = false; // End the game
+//     }
+//   }
+// });
+
+// // Start the game when the "Start" button is clicked
+// document.getElementById('startButton').addEventListener('click', () => {
+//   isGameStarted = true;
+// });
 
 console.log("hi");
 const deck = ["SpA", "Sp2", "Sp3", "Sp4", "Sp5", "Sp6", "Sp7", "Sp8", "Sp9", "Sp10", "SpJ", "SpQ", "SpK",
@@ -52,10 +56,17 @@ function shuffleDeck(deck) {
 function App() {
   return (
     <div>
+      <h1 class="title">Egyptian War!</h1>
       <header>
         <p>
-          Click to play!
-          <img src="file:///Users/vishal/Desktop/DevX/EWar/cardimgs/setting.png" alt="Imae descrition"></img>
+          <button class="playbutton">Click to play!</button>
+          <button class="image-button">
+            <img class="settingimg" src={settingImg} alt="Setting icon" width="35" height="35"/>
+          </button>
+          <button class="image-button">
+          <img class="loginimg" src={loginImg} alt="Login icon" width="35" height="35"/>
+          </button>
+          
           {/* Fix this image thing */}
         </p>
         <a

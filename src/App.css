@@ -1,5 +1,6 @@
-
-
+body{
+background-image: url('./cardimgs/table.jpg');
+}
 
 
 .help-link {
@@ -56,4 +57,89 @@
 .suit {
   top: 80px;
   left: 40px;
+}
+
+.settingimg{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  /* background-color: grey; */
+  border: 4px solid black;
+  padding: 1px;
+  border-radius: 40px;
+  background-color: #ffc107; /* Yellow */
+}
+
+.settingimg:hover{
+  background-color: #e0a800; /* Darker yellow */
+}
+
+.settingimg:active{
+  background-color: #c69500; /* Even darker yellow */
+}
+
+.loginimg{
+  position: absolute;
+  right: 60px;
+  top: 5px;
+  border: 4px solid black;
+  padding: 1px;
+  border-radius: 40px;
+  background-color: #28a745; /* Green */
+  /* background-color: blue; */
+}
+
+.loginimg:hover{
+  background-color: #1e7e34; /* Darker green */
+}
+
+.loginimg:active{
+  background-color: #155d27; /* Even darker green */
+}
+
+.image-button {
+  background: none; /* Remove default button background */
+  border: none; /* Remove default button border */
+  padding: 0; /* Remove padding */
+  cursor: pointer; /* Make the cursor a pointer to indicate it's clickable */
+}
+
+.image-button img {
+  height: auto; /* Maintain aspect ratio */
+}
+
+.title{
+    color: gold;
+    margin: 0;
+    position: absolute;
+    left: 40%;
+    /* border: 3px solid black;
+    padding: 2px; */
+    font-family: Arial, sans-serif;
+}
+
+.playbutton {
+  background-color: #ffd700; /* Gold */
+  color: #003300; /* Dark Green */
+  border: 2px solid #ccaa00; /* Slightly darker gold for the border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px 20px; /* Padding for a better size */
+  font-size: 18px; /* Larger font for readability */
+  font-weight: bold; /* Bold text */
+  text-transform: uppercase; /* Makes text all caps */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth animations for hover effects */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.playbutton:hover {
+  background-color: #ffcc00; /* Brighter gold on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4); /* Enhanced shadow */
+}
+
+.playbutton:active {
+  background-color: #e6b800; /* Darker gold when clicked */
+  transform: scale(0.98); /* Slight shrink effect on click */
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); /* Reduced shadow */
 }
