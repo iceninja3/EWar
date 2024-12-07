@@ -1,3 +1,5 @@
+# This project is currently incomplete (and, for the moment, abandoned)
+
 # EWar (current dev thoughts)!
 
 ## Frontend
